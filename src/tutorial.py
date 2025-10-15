@@ -1,6 +1,3 @@
-from dis import disco
-
-
 def is_palindrome(text: str) -> bool:
     if text == text[::-1]:
         return True
@@ -39,7 +36,3 @@ def word_frequencies(text: str) -> dict:
 
 def is_prime(n: int) -> bool:
     pass
-
-def is_true(true) -> True:
-    if true:
-        return true
