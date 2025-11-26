@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+from api.services.data_loader import get_all_movies
 
 router = APIRouter(
     prefix="/movies"
@@ -6,4 +7,4 @@ router = APIRouter(
 
 @router.get("/")
 async def get_movies():
-    return {"movies": "router"}
+    return get_all_movies()
